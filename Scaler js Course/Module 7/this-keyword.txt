@@ -1,0 +1,26 @@
+Node.js
+Non-Strict
+1) console.log(this) -> {}
+2) Function -> Global Object
+3) ( Object->Function ) -> Object Itself
+4) (Object->Function->Function) -> Global Object
+
+Strict
+1) console.log(this) -> {}
+2) Function -> Undefined
+3) ( Object->Function ) -> Object Itself
+4) (Object->Function->Function) -> Undefined
+
+
+Browser
+Non-Strict
+1) console.log(this) -> window Object
+2) Function -> window Object
+3) ( Object->Function ) -> Object Itself
+4) (Object->Function->Function) -> window Object
+
+Strict
+1) console.log(this) -> window Object
+2) Function -> Undefined
+3) ( Object->Function ) -> Object Itself
+4) (Object->Function->Function) -> Undefined
